@@ -4,9 +4,28 @@
 A scheduler application for busy employees looking to schedule events through their work day (from 9:00 to 17:00) and view these scheduled events at a later time. The current day and time is displayed at the top of the application. Hours of the day are color coded to reflect whether it is in the past, present, or future. Scheduled events are stored in the local storage, so that even when the user refreshes the webpage each hour block still shows the event that was scheduled for that time. 
 
 
-![alt text](./assets/images/Main.png)
-![alt text](./assets/images/Question.png)
-![alt text](./assets/images/ScoreBoard.png)
+![alt text](./assets/Screenshot1.png)
+
+![alt text](./assets/Screenshot2.png)
+
+## Code Snippet
+```
+function colorChange() {
+    var currentHour = moment().hour();
+   
+    for(var i=9; i<=17; i++){
+        if (currentHour > i) {
+            $('#time'+i).css('background-color', 'slategray');
+        }
+        else if (currentHour < i) {
+            $('#time'+i).css('background-color', 'mediumseagreen');
+        }
+        else {
+            $('#time'+i).css('background-color', 'darkseagreen');
+        }   
+    }
+
+```
 
 ## Technologies Used
 <ul>
@@ -22,7 +41,7 @@ A scheduler application for busy employees looking to schedule events through th
  </ul>
  
  ## Deployed Link
-[ Coding Quiz](https://mehmetmusabeyoglu.github.io/Coding-Quiz-Game/)
+[ Work Day Scheduler](https://mehmetmusabeyoglu.github.io/Work-Day-Scheduler-Code-Refactor/)
  
  ## Credits
  N/A
