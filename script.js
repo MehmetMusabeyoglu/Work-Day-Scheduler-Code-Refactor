@@ -25,115 +25,107 @@ function colorChange() {
 
 
     if (currentHour > 9) {
-        $('#time09').css('background-color', 'gray');
+        $('#time09').css('background-color', 'slategray');
     }
     else if (currentHour < 9) {
-        $('#time09').css('background-color', 'olivedrab');
+        $('#time09').css('background-color', 'mediumseagreen');
     }
     else {
-        $('#time09').css('background-color', 'cadetblue');
+        $('#time09').css('background-color', 'darkseagreen');
     }
 
 
     if (currentHour > 10) {
-        $('#time10').css('background-color', 'gray');
+        $('#time10').css('background-color', 'slategray');
     }
     else if (currentHour < 10) {
-        $('#time10').css('background-color', 'olivedrab');
+        $('#time10').css('background-color', 'mediumseagreen');
     }
     else {
-        $('#time10').css('background-color', 'cadetblue');
+        $('#time10').css('background-color', 'darkseagreen');
     }
 
 
     if (currentHour > 11) {
-        $('#time11').css('background-color', 'gray');
+        $('#time11').css('background-color', 'slategray');
     }
     else if (currentHour < 11) {
-        $('#time11').css('background-color', 'olivedrab');
+        $('#time11').css('background-color', 'mediumseagreen');
     }
     else {
-        $('#time11').css('background-color', 'cadetblue');
+        $('#time11').css('background-color', 'darkseagreen');
     }
 
 
     if (currentHour > 12) {
-        $('#time12').css('background-color', 'gray');
+        $('#time12').css('background-color', 'slategray');
     }
     else if (currentHour < 12) {
-        $('#time12').css('background-color', 'olivedrab');
+        $('#time12').css('background-color', 'mediumseagreen');
     }
     else {
-        $('#time12').css('background-color', 'cadetblue');
+        $('#time12').css('background-color', 'darkseagreen');
     }
 
 
     if (currentHour > 13) {
-        $('#time13').css('background-color', 'gray');
+        $('#time13').css('background-color', 'slategray');
     }
     else if (currentHour < 13) {
-        $('#time13').css('background-color', 'olivedrab');
+        $('#time13').css('background-color', 'mediumseagreen');
     }
     else {
-        $('#time13').css('background-color', 'cadetblue');
+        $('#time13').css('background-color', 'darkseagreen');
     }
 
 
     if (currentHour > 14) {
-        $('#time14').css('background-color', 'gray');
+        $('#time14').css('background-color', 'slategray');
     }
     else if (currentHour < 14) {
-        $('#time14').css('background-color', 'olivedrab');
+        $('#time14').css('background-color', 'mediumseagreen');
     }
     else {
-        $('#time14').css('background-color', 'cadetblue');
+        $('#time14').css('background-color', 'darkseagreen');
     }
     
     
     if (currentHour > 15) {
-        $('#time15').css('background-color', 'gray');
+        $('#time15').css('background-color', 'slategray');
     }
     else if (currentHour < 15) {
-        $('#time15').css('background-color', 'olivedrab');
+        $('#time15').css('background-color', 'mediumseagreen');
     }
     else {
-        $('#time15').css('background-color', 'cadetblue');
+        $('#time15').css('background-color', 'darkseagreen');
     }
 
 
     if (currentHour > 16) {
-        $('#time16').css('background-color', 'gray');
+        $('#time16').css('background-color', 'slategray');
     }
     else if (currentHour < 16) {
-        $('#time16').css('background-color', 'olivedrab');
+        $('#time16').css('background-color', 'mediumseagreen');
     }
     else {
-        $('#time16').css('background-color', 'cadetblue');
+        $('#time16').css('background-color', 'darkseagreen');
     }
 
 
     if (currentHour > 17) {
-        $('#time17').css('background-color', 'gray');
+        $('#time17').css('background-color', 'slategray');
     }
     else if (currentHour < 17) {
-        $('#time17').css('background-color', 'olivedrab');
+        $('#time17').css('background-color', 'mediumseagreen');
     }
     else {
-        $('#time17').css('background-color', 'cadetblue');
+        $('#time17').css('background-color', 'darkseagreen');
     }
 
 
 
     
-    if (currentHour > 18) {
-        $('#time18').css('background-color', 'gray');
-    }
-    else if (currentHour < 18) {
-        $('#time18').css('background-color', 'olivedrab');
-    }
-    else {
-        $('#time18').css('background-color', 'cadetblue');
-    }
+   
 
     if (currentHour > 19) {
         $('#time19').css('background-color', 'gray');
@@ -142,7 +134,16 @@ function colorChange() {
         $('#time19').css('background-color', 'olivedrab');
     }
     else {
-        $('#time19').css('background-color', 'cadetblue');
+        $('#time19').css('background-color', 'darkseagreen');
+    }
+    if (currentHour > 20) {
+        $('#time20').css('background-color', 'gray');
+    }
+    else if (currentHour < 20) {
+        $('#time20').css('background-color', 'mediumseagreen');
+    }
+    else {
+        $('#time20').css('background-color', 'cadetblue');
     }
 }
 colorChange();
