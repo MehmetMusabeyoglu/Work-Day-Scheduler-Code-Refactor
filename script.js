@@ -1,4 +1,4 @@
-// Global variables
+// Global variables for textAreas for each hour
 var textArea9El = $("#textArea9");
 var textArea10El = $("#textArea10");
 var textArea11El = $("#textArea11");
@@ -10,15 +10,18 @@ var textArea16El = $("#textArea16");
 var textArea17El = $("#textArea17");
 
 
-
+//function leveraging moment.js to show current time
 let currentTimeShown = function () {
     let currentTime = moment().format("Do MMM YYYY, ddd / HH:mm:ss");
     $("#currentTime").text(currentTime);
 };
 //currentTimeShown();
+
+//shown time updated every second
 setInterval(currentTimeShown, 1000);
 
 
+//logic to change colors of hours in the workday based on whether they are past (gray), present (midseagreen), or future (darkseagreen)
 function colorChange() {
     var currentHour = moment().hour();
     // console.log(currentHour);
@@ -136,15 +139,13 @@ function colorChange() {
 }
 colorChange();
 
-
-
 // for (var i=9; i<=17; i++){
 //     $('#button' + i).on('click', function(){
 //         console.log($('#textArea'+i));
 //     })
 // }
 
-
+//adding eventListeners to save buttons, so that the text entered for an hour is saved to local storage when save button is clicked
 $('#button9').on('click',function(){
     console.log('textArea9El');
     localStorage.setItem(9, textArea9El.val());
@@ -190,7 +191,7 @@ $('#button17').on('click',function(){
     localStorage.setItem(17, textArea17El.val());
 })
 
-
+//getting the saved events from local storage and writing it to the specific hour's text area
 textArea9El.val( localStorage.getItem(9));
 textArea10El.val( localStorage.getItem(10));
 textArea11El.val( localStorage.getItem(11));
