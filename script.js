@@ -9,9 +9,7 @@ var textArea15El = $("#textArea15");
 var textArea16El = $("#textArea16");
 var textArea17El = $("#textArea17");
 
-for(var i=9; i<=17; i++){
-    localStorage.setItem(i, ""); 
-}
+
 
 let currentTimeShown = function () {
     let currentTime = moment().format("Do MMM YYYY, ddd / HH:mm:ss");
@@ -139,6 +137,7 @@ function colorChange() {
 colorChange();
 
 
+
 // for (var i=9; i<=17; i++){
 //     $('#button' + i).on('click', function(){
 //         console.log($('#textArea'+i));
@@ -192,3 +191,12 @@ $('#button17').on('click',function(){
 })
 
 
+textArea9El.val( localStorage.getItem(9));
+textArea10El.val( localStorage.getItem(10));
+textArea11El.val( localStorage.getItem(11));
+textArea12El.val( localStorage.getItem(12));
+textArea13El.val( localStorage.getItem(13));
+textArea14El.val( localStorage.getItem(14));
+textArea15El.val( localStorage.getItem(15));
+textArea16El.val( localStorage.getItem(16));
+textArea17El.val( localStorage.getItem(17));
